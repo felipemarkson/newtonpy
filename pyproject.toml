@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "newton"
+version = "0.1.0"
+description = "A package to solve non-linear equations"
+authors = ["Felipe Monteiro <fmarkson@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.19.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.3"
+black = "^19.10b0"
+pytest = "^5.4.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

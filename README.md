@@ -1,6 +1,6 @@
 # NewtonPy
 
-A package to solve nonlinear equations by newtonpy–Raphson method
+A package to solve nonlinear equations by Newton–Raphson method
 
 ## Exemple
 

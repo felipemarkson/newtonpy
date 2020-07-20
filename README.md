@@ -8,12 +8,12 @@ A package to solve nonlinear equations by Newton–Raphson method
 
 The function:
 
-![Screenshot](docs/eq1.png)
+![Equation 1](docs/eq1.png)
 
 
 The Jacobian of function:
 
-![Screenshot](docs/eq2.png)
+![Equation 2](docs/eq2.png)
 
 
 ``` python
@@ -34,11 +34,11 @@ print(solution)
 
 The function:
 
-![Screenshot](docs/eq3.png)
+![Equation 3](docs/eq3.png)
 
 The Jacobian of function:
 
-![Screenshot](docs/eq4.png)
+![Equation 4](docs/eq4.png)
 
 ``` python
 import newton

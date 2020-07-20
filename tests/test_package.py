@@ -1,20 +1,20 @@
-import newton
+import newtonpy
 import inspect
 import numpy as np
 from numpy import ndarray
 from typing import Tuple, Callable, Union
 
 
-def test_newton_has_solve():
-    assert hasattr(newton, "solve")
+def test_newtonpy_has_solve():
+    assert hasattr(newtonpy, "solve")
 
 
-def test_newton_solve_is_callabe():
-    inspect.isfunction(newton.solve)
+def test_newtonpy_solve_is_callabe():
+    inspect.isfunction(newtonpy.solve)
 
 
 class TestSolveSignature:
-    sig = inspect.signature(newton.solve)
+    sig = inspect.signature(newtonpy.solve)
 
     def test_solve_return_tuple(cls):
         assert cls.sig.return_annotation is Tuple[bool, ndarray, ndarray]
@@ -58,7 +58,7 @@ class TestSolveSignature:
 
 class TestSolveOneVariable:
     def test_solve_converge(self):
-        result = newton.solve(
+        result = newtonpy.solve(
             lambda x: np.array([x ** 2]),
             lambda x: np.array([2 * x]),
             x0=np.array([1.2]),
@@ -72,7 +72,7 @@ class TestSolveOneVariable:
         assert result[2] <= 0.001 or result[2] >= -0.001
 
     def test_solver_not_coverge(self):
-        result = newton.solve(
+        result = newtonpy.solve(
             lambda x: np.array([x ** 2]),
             lambda x: np.array([2 * x]),
             x0=np.array([100]),
@@ -86,7 +86,7 @@ class TestSolveOneVariable:
 
 class TestSolveMultVariable:
     def test_solve_converge(self):
-        result = newton.solve(
+        result = newtonpy.solve(
             lambda x: np.array([x[0] ** 2 + x[1] ** 2, 2 * x[1]]),
             lambda x: np.array([[2 * x[0], 2 * x[1]], [0, 2]]),
             x0=np.array([1, 1]),
@@ -100,7 +100,7 @@ class TestSolveMultVariable:
         assert all(result[2] <= 0.001) or all(result[2] >= -0.001)
 
     def test_solve_not_converge(self):
-        result = newton.solve(
+        result = newtonpy.solve(
             lambda x: np.array([x[0] ** 2 + x[1] ** 2, 2 * x[1]]),
             lambda x: np.array([[2 * x[0], 2 * x[1]], [0, 2]]),
             x0=np.array([100, 100]),

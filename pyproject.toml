@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "newton"
+name = "newtonpy"
 version = "0.1.0"
 description = "A package to solve nonlinear equations"
 authors = ["Felipe M. S. Monteiro <fmarkson@outlook.com>"]

@@ -1,4 +1,4 @@
-# Newton
+# NewtonPy
 
 A package to solve nonlinear equations by Newton–Raphson method
 
@@ -16,7 +16,7 @@ The Jacobian of function:
 ![Equation 2](docs/eq2.png)
 
 ``` python
-import newton
+import newtonpy
 import numpy as np
 
 (converged, error, solution) = newton.solve(

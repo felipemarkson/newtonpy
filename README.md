@@ -1,6 +1,6 @@
 # NewtonPy
 
-A package to solve nonlinear equations by Newton–Raphson method
+A package to solve nonlinear equations by newtonpy–Raphson method
 
 ## Exemple
 
@@ -19,7 +19,7 @@ The Jacobian of function:
 import newtonpy
 import numpy as np
 
-(converged, error, solution) = newton.solve(
+(converged, error, solution) = newtonpy.solve(
     lambda x: x ** 2,
     lambda x: np.array([2 * x]),
     x0=np.array([1.2]),
@@ -41,10 +41,10 @@ The Jacobian of function:
 
 
 ``` python
-import newton
+import newtonpy
 import numpy as np
 
-(converged, error, solution) = newton.solve(
+(converged, error, solution) = newtonpy.solve(
     lambda x: np.array([x[0] ** 2 + x[1] ** 2, 2 * x[1]]),
     lambda x: np.array([[2 * x[0], 2 * x[1]], [0, 2]]),
     x0=np.array([1, 1]),
@@ -59,8 +59,8 @@ print(solution)
 ## Documentation
 
 ``` python
-import newton
-help(newton)
+import newtonpy
+help(newtonpy)
 ```
 
 

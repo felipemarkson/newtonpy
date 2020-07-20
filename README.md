@@ -2,6 +2,14 @@
 
 A package to solve nonlinear equations by Newton–Raphson method
 
+## Installation
+
+Requires Python 3.8+
+
+```bash
+pip install newtonpy
+```
+
 ## Exemple
 
 ### One variable

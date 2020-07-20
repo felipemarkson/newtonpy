@@ -3,19 +3,17 @@
 A package to solve nonlinear equations by Newton–Raphson method
 
 ## Exemple
------
 
 ### One variable
 
 The function:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=f%28x%29%20%3D%20%20x%5E%7B2%7D&bc=White&fc=Black&im=png&fs=18&ff=modern&edit=0" align="center" border="0" alt="f(x) =  x^{2}" width="108" height="31" />
+![Equation 1](docs/eq1.png)
 
 
 The Jacobian of function:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=J%20%5Cbig%5C%7Bf%28x%29%5Cbig%5C%7D%20%3D%20%20%5Cbegin%7Bbmatrix%7D2x%20%5Cend%7Bbmatrix%7D%20%20&bc=White&fc=Black&im=png&fs=18&ff=modern&edit=0" align="center" border="0" alt="J \big\{f(x)\big\} =  \begin{bmatrix}2x \end{bmatrix}  " width="175" height="33" />
-
+![Equation 2](docs/eq2.png)
 
 ``` python
 import newton
@@ -35,11 +33,12 @@ print(solution)
 
 The function:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=f%28%20%5Coverrightarrow%7Bx%7D%29%20%3D%20%20%5Cbegin%7Bbmatrix%7D%20%20x_%7B0%7D%5E2%20%2B%20x_%7B1%7D%5E2%20%5C%5C%202x_%7B1%7D%20%5Cend%7Bbmatrix%7D&bc=White&fc=Black&im=png&fs=18&ff=modern&edit=0" align="center" border="0" alt="f( \overrightarrow{x}) =  \begin{bmatrix}  x_{0}^2 + x_{1}^2 \\ 2x_{1} \end{bmatrix}" width="200" height="62" />
+![Equation 3](docs/eq3.png)
 
 The Jacobian of function:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%20J%5Cbig%5C%7B%20f%28%20%5Coverrightarrow%7Bx%7D%29%20%5Cbig%5C%7D%20%3D%20%20%5Cbegin%7Bbmatrix%7D%20%202x_0%20%26%202x_1%20%5C%5C%200%20%26%202%20%5Cend%7Bbmatrix%7D&bc=White&fc=Black&im=png&fs=18&ff=modern&edit=0" align="center" border="0" alt=" J\big\{ f( \overrightarrow{x}) \big\} =  \begin{bmatrix}  2x_0 & 2x_1 \\ 0 & 2 \end{bmatrix}" width="258" height="62" />
+![Equation 4](docs/eq4.png)
+
 
 ``` python
 import newton
@@ -58,7 +57,6 @@ print(solution)
 
 
 ## Documentation
------
 
 ``` python
 import newton
@@ -67,7 +65,6 @@ help(newton)
 
 
 ## License and Copyright
------
  
 MIT License
 

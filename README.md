@@ -8,13 +8,17 @@ A package to solve nonlinear equations by Newton–Raphson method
 
 The function:
 
+### One variable
+
+
+The function:
+
 ![Equation 1](docs/eq1.png)
 
 
 The Jacobian of function:
 
 ![Equation 2](docs/eq2.png)
-
 
 ``` python
 import newton
@@ -39,6 +43,7 @@ The function:
 The Jacobian of function:
 
 ![Equation 4](docs/eq4.png)
+
 
 ``` python
 import newton

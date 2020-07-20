@@ -8,11 +8,6 @@ A package to solve nonlinear equations by Newton–Raphson method
 
 The function:
 
-### One variable
-
-
-The function:
-
 ![Equation 1](docs/eq1.png)
 
 

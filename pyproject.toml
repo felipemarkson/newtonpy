@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "newton"
 version = "0.1.0"
-description = "A package to solve non-linear equations"
+description = "A package to solve nonlinear equations"
 authors = ["Felipe M. S. Monteiro <fmarkson@outlook.com>"]
 license = "MIT"
 readme = "README.md"

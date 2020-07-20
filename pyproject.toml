@@ -5,8 +5,8 @@ description = "A package to solve nonlinear equations"
 authors = ["Felipe M. S. Monteiro <fmarkson@outlook.com>"]
 license = "MIT"
 readme = "README.md"
-documentation = "https://github.com/felipemarkson/newton"
-repository = "https://github.com/felipemarkson/newton"
+documentation = "https://github.com/felipemarkson/newtonpy"
+repository = "https://github.com/felipemarkson/newtonpy"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Topic :: Software Development :: Libraries :: Python Modules",

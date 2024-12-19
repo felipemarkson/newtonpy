@@ -19,7 +19,7 @@ numpy = "^1.19.0"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.8.3"
-black = "^19.10b0"
+black = "^24.3"
 pytest = "^5.4.3"
 notebook = "^6.0.3"
 
